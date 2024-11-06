@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player2Cam
+  - p1Ground
+  - p2Ground
+  - pit
   layers:
   - Default
   - TransparentFX
