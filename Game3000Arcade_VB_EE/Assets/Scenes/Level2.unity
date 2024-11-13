@@ -2146,7 +2146,7 @@ PrefabInstance:
     - target: {fileID: 837814673585921066, guid: ec4e8d86b73163e489adb26ae107d2a3,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1539552036230525818, guid: ec4e8d86b73163e489adb26ae107d2a3,
         type: 3}
@@ -2316,7 +2316,7 @@ PrefabInstance:
     - target: {fileID: 7138950912413961752, guid: ec4e8d86b73163e489adb26ae107d2a3,
         type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7230199286823743250, guid: ec4e8d86b73163e489adb26ae107d2a3,
         type: 3}
