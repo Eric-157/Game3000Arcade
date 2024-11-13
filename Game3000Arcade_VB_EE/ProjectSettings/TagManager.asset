@@ -8,6 +8,8 @@ TagManager:
   - p1Ground
   - p2Ground
   - pit
+  - End1
+  - End2
   layers:
   - Default
   - TransparentFX

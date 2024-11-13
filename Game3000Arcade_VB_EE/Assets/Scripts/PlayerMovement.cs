@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -53,19 +54,19 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Jump for player 1
-        if (Input.GetKeyDown(KeyCode.Space) && p1IsOnGround && !deathScript.gameOver)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.V) || Input.GetKeyDown(KeyCode.B)) && p1IsOnGround && !deathScript.gameOver)
         {
             p1playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             p1IsOnGround = false;
         }
 
         // Jump for player 2
-        if (Input.GetKeyDown(KeyCode.RightShift) && p2IsOnGround && !deathScript.gameOver)
+        if ((Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Alpha6)) && p2IsOnGround && !deathScript.gameOver)
         {
             p2playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             p2IsOnGround = false;
         }
-        
+
         // Camera movement. Will only move on the z axis, with the other 2 axis' being locked.
         p1Cam.transform.position = new Vector3(-12, 16, p1.transform.position.z);
         p2Cam.transform.position = new Vector3(12, 16, p2.transform.position.z);
